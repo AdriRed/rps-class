@@ -7,14 +7,12 @@ namespace RPS.Objects
     {
         private readonly List<string> TYPES = new List<string>{ "Rock", "Paper", "Scissors" };
 
-        public byte Type;
+        public sbyte Type;
 
         public Move(string typeName)
         {
-            Type = (byte) TYPES.IndexOf(typeName);
+            Type = (sbyte) TYPES.IndexOf(typeName);
         }
-
-        
 
     }
 }

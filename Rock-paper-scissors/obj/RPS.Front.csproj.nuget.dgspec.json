@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IDE\\Desktop\\GITS\\rps-class\\Rock-paper-scissors\\RPS.Console.csproj": {}
+    "C:\\Users\\IDE\\Desktop\\GITS\\rps-class\\Rock-paper-scissors\\RPS.Front.csproj": {}
   },
   "projects": {
     "C:\\Users\\IDE\\Desktop\\GITS\\rps-class\\Logic\\RPS.csproj": {
@@ -56,12 +56,12 @@
         }
       }
     },
-    "C:\\Users\\IDE\\Desktop\\GITS\\rps-class\\Rock-paper-scissors\\RPS.Console.csproj": {
+    "C:\\Users\\IDE\\Desktop\\GITS\\rps-class\\Rock-paper-scissors\\RPS.Front.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IDE\\Desktop\\GITS\\rps-class\\Rock-paper-scissors\\RPS.Console.csproj",
-        "projectName": "RPS.Console",
-        "projectPath": "C:\\Users\\IDE\\Desktop\\GITS\\rps-class\\Rock-paper-scissors\\RPS.Console.csproj",
+        "projectUniqueName": "C:\\Users\\IDE\\Desktop\\GITS\\rps-class\\Rock-paper-scissors\\RPS.Front.csproj",
+        "projectName": "RPS.Front",
+        "projectPath": "C:\\Users\\IDE\\Desktop\\GITS\\rps-class\\Rock-paper-scissors\\RPS.Front.csproj",
         "packagesPath": "C:\\Users\\IDE\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\IDE\\Desktop\\GITS\\rps-class\\Rock-paper-scissors\\obj\\",
         "projectStyle": "PackageReference",

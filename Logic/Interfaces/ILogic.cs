@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using RPS.Objects;
 
-namespace Logic.Interfaces
+namespace RPS.Interfaces
 {
     interface ILogic
     {
@@ -12,6 +13,6 @@ namespace Logic.Interfaces
         void GetTotalWinner();
         byte Traduct(string play);
         string Traduct(byte play);
-        byte SetWinner(byte p1, byte p2);
+        byte SetWinner(Player p1, Player p2);
     }
 }

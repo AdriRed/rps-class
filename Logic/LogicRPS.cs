@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using Logic.Interfaces;
+using RPS.Interfaces;
+using RPS.Objects;
 
 namespace Logic
 {
@@ -116,13 +117,16 @@ namespace Logic
             return STRINGPLAYS[play];
         }
 
-        public byte SetWinner(byte p1, byte p2)
+        public static Player SetWinner(Player p1, Player p2)
         {
-            byte winner = tieItem;
+            sbyte winnerItem = -1;
 
-            if (p1 != p2)
+            sbyte p1Movement = p1.Hand.Type;
+            sbyte p2Movement = p2.Hand.Type;
+
+            if (p1Movement != p2Movement)
             {
-                if ((p2 + 1) % 3 == p1)
+                if ((p2Movement + 1) % 3 == p1Movement)
                 {
                     winner = p1Item;
                 } else
@@ -133,5 +137,6 @@ namespace Logic
 
             return winner;
         }
+
     }
 }

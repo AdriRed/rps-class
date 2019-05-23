@@ -704,23 +704,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\arojo\\.nuget\\packages\\": {},
+    "C:\\Users\\IDE\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\arojo\\Desktop\\GITS\\Rock-paper-scissors\\Rock-paper-scissors\\RPS.Console.csproj",
-      "projectName": "RPS.Console",
-      "projectPath": "C:\\Users\\arojo\\Desktop\\GITS\\Rock-paper-scissors\\Rock-paper-scissors\\RPS.Console.csproj",
-      "packagesPath": "C:\\Users\\arojo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\arojo\\Desktop\\GITS\\Rock-paper-scissors\\Rock-paper-scissors\\obj\\",
+      "projectUniqueName": "C:\\Users\\IDE\\Desktop\\GITS\\rps-class\\Rock-paper-scissors\\RPS.Front.csproj",
+      "projectName": "RPS.Front",
+      "projectPath": "C:\\Users\\IDE\\Desktop\\GITS\\rps-class\\Rock-paper-scissors\\RPS.Front.csproj",
+      "packagesPath": "C:\\Users\\IDE\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\IDE\\Desktop\\GITS\\rps-class\\Rock-paper-scissors\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\arojo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\IDE\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -733,8 +733,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\arojo\\Desktop\\GITS\\Rock-paper-scissors\\Logic\\RPS.csproj": {
-              "projectPath": "C:\\Users\\arojo\\Desktop\\GITS\\Rock-paper-scissors\\Logic\\RPS.csproj"
+            "C:\\Users\\IDE\\Desktop\\GITS\\rps-class\\Logic\\RPS.csproj": {
+              "projectPath": "C:\\Users\\IDE\\Desktop\\GITS\\rps-class\\Logic\\RPS.csproj"
             }
           }
         }

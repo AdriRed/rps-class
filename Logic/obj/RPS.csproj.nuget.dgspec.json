@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\arojo\\Desktop\\GITS\\Rock-paper-scissors\\Logic\\RPS.csproj": {}
+    "C:\\Users\\IDE\\Desktop\\GITS\\rps-class\\Logic\\RPS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arojo\\Desktop\\GITS\\Rock-paper-scissors\\Logic\\RPS.csproj": {
+    "C:\\Users\\IDE\\Desktop\\GITS\\rps-class\\Logic\\RPS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arojo\\Desktop\\GITS\\Rock-paper-scissors\\Logic\\RPS.csproj",
+        "projectUniqueName": "C:\\Users\\IDE\\Desktop\\GITS\\rps-class\\Logic\\RPS.csproj",
         "projectName": "RPS",
-        "projectPath": "C:\\Users\\arojo\\Desktop\\GITS\\Rock-paper-scissors\\Logic\\RPS.csproj",
-        "packagesPath": "C:\\Users\\arojo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arojo\\Desktop\\GITS\\Rock-paper-scissors\\Logic\\obj\\",
+        "projectPath": "C:\\Users\\IDE\\Desktop\\GITS\\rps-class\\Logic\\RPS.csproj",
+        "packagesPath": "C:\\Users\\IDE\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\IDE\\Desktop\\GITS\\rps-class\\Logic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\arojo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\IDE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

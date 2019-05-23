@@ -1,7 +1,7 @@
 ﻿using System;
 using Logic;
 
-namespace RPS.Console
+namespace RPS.Front
 {
     class Program
     {

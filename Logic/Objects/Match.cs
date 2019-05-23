@@ -11,10 +11,18 @@ namespace RPS.Objects
 
         public Match(string p1move, string p2move)
         {
-            P1 = new Player(p1move);
-            P2 = new Player(p2move);
+            (P1 = new Player(1)).SetMove(p1move);
+            (P2 = new Player(2)).SetMove(p2move);
         }
 
-        Winner = 
+        public void SetWinner()
+        {
+            
+        }
+
+        public sbyte GetWinner()
+        {
+            return Winner.GetItem();
+        }
     }
 }
