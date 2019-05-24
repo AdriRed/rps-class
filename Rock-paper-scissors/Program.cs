@@ -10,10 +10,10 @@ namespace RPS.Front
             //P1 = PLAYER 1
             //P2 = PLAYER 2
 
-            Player p1 = new Player("Adri");
-            Player p2 = new Player("Alberto");
+            Player player1 = new Player("Adri");
+            Player player2 = new Player("Alberto");
 
-            Game game = new Game(p1, p2);
+            Game game = new Game(player1, player2);
 
             game.NewRound("Rock", "Scissors");
             Console.WriteLine("RESULT " + game.actualRound.GetResult());
@@ -21,62 +21,62 @@ namespace RPS.Front
             Console.WriteLine(game.GetState());
 
 
-            p1.SetMove("Paper"); p2.SetMove("Paper");
-            game.NewRound(p1, p2);
+            player1.SetMove("Paper"); player2.SetMove("Paper");
+            game.NewRound(player1, player2);
             Console.WriteLine("RESULT " + game.actualRound.GetResult());
 
             Console.WriteLine(game.GetState());
 
-            p1.SetMove("Paper"); p2.SetMove("Rock");
-            game.NewRound(p1, p2);
+            player1.SetMove("Paper"); player2.SetMove("Rock");
+            game.NewRound(player1, player2);
             Console.WriteLine("RESULT " + game.actualRound.GetResult());
 
             Console.WriteLine(game.GetState());
 
-            p1.SetMove("Paper"); p2.SetMove("Rock");
-            game.NewRound(p1, p2);
+            player1.SetMove("Paper"); player2.SetMove("Rock");
+            game.NewRound(player1, player2);
             Console.WriteLine("RESULT " + game.actualRound.GetResult());
 
             Console.WriteLine(game.GetState());
 
-            p1.SetMove("Paper"); p2.SetMove("Rock");
-            game.NewRound(p1, p2);
+            player1.SetMove("Paper"); player2.SetMove("Rock");
+            game.NewRound(player1, player2);
             Console.WriteLine("RESULT " + game.actualRound.GetResult());
 
             Console.WriteLine(game.GetState());
 
-            p1.SetMove("Paper"); p2.SetMove("Rock");
-            game.NewRound(p1, p2);
+            player1.SetMove("Paper"); player2.SetMove("Rock");
+            game.NewRound(player1, player2);
             Console.WriteLine("RESULT " + game.actualRound.GetResult());
 
             Console.WriteLine(game.GetState());
 
-            p1.SetMove("Paper"); p2.SetMove("Rock");
-            game.NewRound(p1, p2);
+            player1.SetMove("Paper"); player2.SetMove("Rock");
+            game.NewRound(player1, player2);
             Console.WriteLine("RESULT " + game.actualRound.GetResult());
 
             Console.WriteLine(game.GetState());
 
-            p1.SetMove("Paper"); p2.SetMove("Rock");
-            game.NewRound(p1, p2);
+            player1.SetMove("Paper"); player2.SetMove("Rock");
+            game.NewRound(player1, player2);
             Console.WriteLine("RESULT " + game.actualRound.GetResult());
 
             Console.WriteLine(game.GetState());
 
-            p1.SetMove("Paper"); p2.SetMove("Rock");
-            game.NewRound(p1, p2);
+            player1.SetMove("Paper"); player2.SetMove("Rock");
+            game.NewRound(player1, player2);
             Console.WriteLine("RESULT " + game.actualRound.GetResult());
 
             Console.WriteLine(game.GetState());
 
-            p1.SetMove("Paper"); p2.SetMove("Rock");
-            game.NewRound(p1, p2);
+            player1.SetMove("Paper"); player2.SetMove("Rock");
+            game.NewRound(player1, player2);
             Console.WriteLine("RESULT " + game.actualRound.GetResult());
 
             Console.WriteLine(game.GetState());
 
-            p1.SetMove("Paper"); p2.SetMove("Rock");
-            game.NewRound(p1, p2);
+            player1.SetMove("Paper"); player2.SetMove("Rock");
+            game.NewRound(player1, player2);
             Console.WriteLine("RESULT " + game.actualRound.GetResult());
 
             Console.WriteLine(game.GetState());
