@@ -7,3 +7,12 @@ C:\Users\IDE\Desktop\GITS\rps-class\Logic\obj\Debug\netstandard2.0\RPS.AssemblyI
 C:\Users\IDE\Desktop\GITS\rps-class\Logic\obj\Debug\netstandard2.0\RPS.AssemblyInfo.cs
 C:\Users\IDE\Desktop\GITS\rps-class\Logic\obj\Debug\netstandard2.0\RPS.dll
 C:\Users\IDE\Desktop\GITS\rps-class\Logic\obj\Debug\netstandard2.0\RPS.pdb
+C:\Users\arojo\Desktop\GITS\rps-class\Logic\obj\Debug\netstandard2.0\RPS.csprojAssemblyReference.cache
+C:\Users\arojo\Desktop\GITS\rps-class\Logic\obj\Debug\netstandard2.0\RPS.csproj.CoreCompileInputs.cache
+C:\Users\arojo\Desktop\GITS\rps-class\Logic\obj\Debug\netstandard2.0\RPS.AssemblyInfoInputs.cache
+C:\Users\arojo\Desktop\GITS\rps-class\Logic\obj\Debug\netstandard2.0\RPS.AssemblyInfo.cs
+C:\Users\arojo\Desktop\GITS\rps-class\Logic\obj\Debug\netstandard2.0\RPS.dll
+C:\Users\arojo\Desktop\GITS\rps-class\Logic\obj\Debug\netstandard2.0\RPS.pdb
+C:\Users\arojo\Desktop\GITS\rps-class\Logic\bin\Debug\netstandard2.0\RPS.deps.json
+C:\Users\arojo\Desktop\GITS\rps-class\Logic\bin\Debug\netstandard2.0\RPS.dll
+C:\Users\arojo\Desktop\GITS\rps-class\Logic\bin\Debug\netstandard2.0\RPS.pdb

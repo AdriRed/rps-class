@@ -1,29 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using RPS.Interfaces;
 
 namespace RPS.Objects
 {
-    public class Player
+    public class Player : IPlayer
     {
-        string name;
+        public string Name;
         public Move Hand;
-        sbyte annexedItem;
-        private uint score;
+        public uint Score;
 
 
-        public Player(sbyte annexedItem)
+        public Player()
         {
-            this.annexedItem = annexedItem;
-            name = "PLAYER " + annexedItem;
-            score = 0;
+            Score = 0;
+            Name = "PLAYER";
         }
 
-        public Player(sbyte annexedItem, string name)
+        public Player(string name)
         {
-            this.annexedItem = annexedItem;
-            this.name = name;
-            score = 0;
+            this.Name = name;
+            Score = 0;
         }
 
         public void SetMove(string move)
@@ -33,13 +31,12 @@ namespace RPS.Objects
 
         public void AddPoint()
         {
-            score++;
+            Score++;
         }
 
-        public sbyte GetItem()
+        public void SetMove(sbyte move)
         {
-            return annexedItem;
+            Hand = new Move(move);
         }
-
     }
 }

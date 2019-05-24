@@ -1,5 +1,5 @@
 ﻿using System;
-using Logic;
+using RPS.Objects;
 
 namespace RPS.Front
 {
@@ -7,36 +7,29 @@ namespace RPS.Front
     {
         static void Main()
         {
-            LogicRPS logic = new LogicRPS();
+            Player p1 = new Player("Adri");
+            Player p2 = new Player("Alberto");
 
-            //"Rock"
-            //"Paper"
-            //"Scissors"
+            Game g = new Game(p1, p2);
 
-            //1
-            logic.Play(0, 1);
-            //2
-            logic.Play("Rock", "Paper");
-            //3
-            logic.Play("Scissors", "Paper");
-            //4
-            logic.Play("Paper", "Rock");
-            //5
-            logic.Play(2, 2);
-            //6
-            logic.Play("Rock", "Scissors");
-            //7
-            logic.Play("Rock", "Rock");
-            //8
-            logic.Play(2, 0);
-            //9
-            logic.Play(1, 0);
-            //10
-            logic.Play("Rock", "Rock");
+            g.NewRound("Rock", "Scissors");
+            Console.WriteLine("RESULT " + g.actualRound.GetResult());
 
-            //logic.GetTotalWinner();
+            Console.WriteLine(g.GetState());
 
-            Console.ReadKey();
+            p1.SetMove("Paper"); p2.SetMove("Paper");
+            g.NewRound(p1, p2);
+            Console.WriteLine("RESULT " + g.actualRound.GetResult());
+
+            Console.WriteLine(g.GetState());
+
+            p1.SetMove("Paper"); p2.SetMove("Rock");
+            g.NewRound(p1, p2);
+            Console.WriteLine("RESULT " + g.actualRound.GetResult());
+
+            Console.WriteLine(g.GetState());
+            
         }
+
     }
 }

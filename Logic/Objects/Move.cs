@@ -14,5 +14,10 @@ namespace RPS.Objects
             Type = (sbyte) TYPES.IndexOf(typeName);
         }
 
+        public Move (sbyte type)
+        {
+            this.Type = type;
+        }
+
     }
 }
