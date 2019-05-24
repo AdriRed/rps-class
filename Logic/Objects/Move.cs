@@ -6,15 +6,14 @@ namespace RPS.Objects
     public class Move
     {
         private readonly List<string> TYPES = new List<string>{ "Rock", "Paper", "Scissors" };
-
-        public sbyte Type;
+        public byte Type;
 
         public Move(string typeName)
         {
-            Type = (sbyte) TYPES.IndexOf(typeName);
+            Type = (byte) TYPES.IndexOf(typeName);
         }
 
-        public Move (sbyte type)
+        public Move (byte type)
         {
             this.Type = type;
         }

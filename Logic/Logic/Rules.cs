@@ -12,8 +12,8 @@ namespace RPS.Logic
         {
             Player Winner;
 
-            sbyte p1Movement = p1.Hand.Type;
-            sbyte p2Movement = p2.Hand.Type;
+            byte p1Movement = p1.Hand.Type;
+            byte p2Movement = p2.Hand.Type;
 
             if (p1Movement != p2Movement)
             {

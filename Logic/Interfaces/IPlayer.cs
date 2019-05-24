@@ -7,7 +7,7 @@ namespace RPS.Interfaces
     interface IPlayer
     {
         void SetMove(string smove);
-        void SetMove(sbyte move);
+        void SetMove(byte move);
         void AddPoint();
     }
 }

@@ -8,14 +8,14 @@ namespace RPS.Objects
     public class Game : IGame
     {
         Player P1, P2;
-        Score sc;
+        Score Sc;
         public Round actualRound;
-
+        
         public Game(Player p1, Player p2)
         {
             this.P1 = p1;
             this.P2 = p2;
-            this.sc = new Score(P1, P2);
+            this.Sc = new Score(P1, P2);
         }
 
         public void NewRound (string moveP1, string moveP2)
@@ -25,11 +25,9 @@ namespace RPS.Objects
             NewRound(P1, P2);
         }
 
-        
-
         public string GetState()
         {
-            return sc.State();
+            return Sc.State();
         }
 
         public void NewRound(Player p1, Player p2)

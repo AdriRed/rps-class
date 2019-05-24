@@ -34,7 +34,7 @@ namespace RPS.Objects
             Score++;
         }
 
-        public void SetMove(sbyte move)
+        public void SetMove(byte move)
         {
             Hand = new Move(move);
         }
