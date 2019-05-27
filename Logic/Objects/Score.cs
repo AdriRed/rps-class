@@ -1,12 +1,8 @@
-﻿using System;
-using RPS.Interfaces;
-
-namespace RPS.Objects
+﻿namespace RPS.Objects
 {
-    public class Score : IScore
+    public class Score
     {
-
-        Player P1, P2;
+        private Player P1, P2;
 
         public Score(Player p1, Player p2)
         {
@@ -14,9 +10,9 @@ namespace RPS.Objects
             this.P2 = p2;
         }
 
-        public string State()
+        public override string ToString()
         {
-            return P1.Score + " - " + P2.Score;
+            return P1.Points + " - " + P2.Points;
         }
     }
 }

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using RPS.Interfaces;
-using RPS.Objects;
+﻿using RPS.Objects;
 
 namespace RPS.Logic
 {
@@ -12,8 +9,8 @@ namespace RPS.Logic
         {
             Player Winner;
 
-            byte p1Movement = p1.Hand.Type;
-            byte p2Movement = p2.Hand.Type;
+            byte p1Movement = p1.HandType;
+            byte p2Movement = p2.HandType;
 
             if (p1Movement != p2Movement)
             {
@@ -21,12 +18,14 @@ namespace RPS.Logic
                 {
                     p1.AddPoint();
                     Winner = p1;
-                } else
+                }
+                else
                 {
                     p2.AddPoint();
                     Winner = p2;
                 }
-            } else
+            }
+            else
             {
                 Winner = null;
             }

@@ -4,12 +4,12 @@
     "C:\\Users\\arojo\\Desktop\\GITS\\rps-class\\Rock-paper-scissors\\RPS.Front.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arojo\\Desktop\\GITS\\rps-class\\Logic\\RPS.csproj": {
+    "C:\\Users\\arojo\\Desktop\\GITS\\rps-class\\Logic\\RPS.Back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arojo\\Desktop\\GITS\\rps-class\\Logic\\RPS.csproj",
-        "projectName": "RPS",
-        "projectPath": "C:\\Users\\arojo\\Desktop\\GITS\\rps-class\\Logic\\RPS.csproj",
+        "projectUniqueName": "C:\\Users\\arojo\\Desktop\\GITS\\rps-class\\Logic\\RPS.Back.csproj",
+        "projectName": "RPS.Back",
+        "projectPath": "C:\\Users\\arojo\\Desktop\\GITS\\rps-class\\Logic\\RPS.Back.csproj",
         "packagesPath": "C:\\Users\\arojo\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\arojo\\Desktop\\GITS\\rps-class\\Logic\\obj\\",
         "projectStyle": "PackageReference",
@@ -82,8 +82,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\arojo\\Desktop\\GITS\\rps-class\\Logic\\RPS.csproj": {
-                "projectPath": "C:\\Users\\arojo\\Desktop\\GITS\\rps-class\\Logic\\RPS.csproj"
+              "C:\\Users\\arojo\\Desktop\\GITS\\rps-class\\Logic\\RPS.Back.csproj": {
+                "projectPath": "C:\\Users\\arojo\\Desktop\\GITS\\rps-class\\Logic\\RPS.Back.csproj"
               }
             }
           }

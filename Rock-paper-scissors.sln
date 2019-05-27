@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.28917.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPS.Front", "Rock-paper-scissors\RPS.Front.csproj", "{D0EE1B01-4926-4BBB-9503-597BC5FB1F73}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPS", "Logic\RPS.csproj", "{AE4B607E-A0FE-4B5C-B788-9CCEF72E8D18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPS.Back", "Logic\RPS.Back.csproj", "{AE4B607E-A0FE-4B5C-B788-9CCEF72E8D18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

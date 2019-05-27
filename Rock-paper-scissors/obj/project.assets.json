@@ -208,14 +208,14 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "RPS/1.0.0": {
+      "RPS.Back/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "compile": {
-          "bin/placeholder/RPS.dll": {}
+          "bin/placeholder/RPS.Back.dll": {}
         },
         "runtime": {
-          "bin/placeholder/RPS.dll": {}
+          "bin/placeholder/RPS.Back.dll": {}
         }
       }
     }
@@ -691,16 +691,16 @@
         "netstandard.library.nuspec"
       ]
     },
-    "RPS/1.0.0": {
+    "RPS.Back/1.0.0": {
       "type": "project",
-      "path": "../Logic/RPS.csproj",
-      "msbuildProject": "../Logic/RPS.csproj"
+      "path": "../Logic/RPS.Back.csproj",
+      "msbuildProject": "../Logic/RPS.Back.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.NETCore.App >= 2.1.0",
-      "RPS >= 1.0.0"
+      "RPS.Back >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -733,8 +733,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\arojo\\Desktop\\GITS\\rps-class\\Logic\\RPS.csproj": {
-              "projectPath": "C:\\Users\\arojo\\Desktop\\GITS\\rps-class\\Logic\\RPS.csproj"
+            "C:\\Users\\arojo\\Desktop\\GITS\\rps-class\\Logic\\RPS.Back.csproj": {
+              "projectPath": "C:\\Users\\arojo\\Desktop\\GITS\\rps-class\\Logic\\RPS.Back.csproj"
             }
           }
         }

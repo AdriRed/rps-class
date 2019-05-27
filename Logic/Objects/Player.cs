@@ -1,42 +1,60 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using RPS.Interfaces;
-
-namespace RPS.Objects
+﻿namespace RPS.Objects
 {
-    public class Player : IPlayer
+    public class Player
     {
-        public string Name;
-        public Move Hand;
-        public uint Score;
+        private Move _Hand;
 
+        public string Name
+        {
+            set;
+            get;
+        }
+
+        public byte HandType
+        {
+            set
+            {
+                _Hand.Type = value;
+            }
+            get
+            {
+                return _Hand.Type;
+            }
+        }
+
+        public string Hand
+        {
+            set
+            {
+                _Hand = new Move(value);
+            }
+            get
+            {
+                return _Hand.ToString();
+            }
+        }
+
+        public uint Points
+        {
+            set;
+            get;
+        }
 
         public Player()
         {
-            Score = 0;
-            Name = "PLAYER";
+            this.Name = "PLAYER";
+            Points = 0;
         }
 
         public Player(string name)
         {
             this.Name = name;
-            Score = 0;
-        }
-
-        public void SetMove(string move)
-        {
-            Hand = new Move(move);
+            Points = 0;
         }
 
         public void AddPoint()
         {
-            Score++;
-        }
-
-        public void SetMove(byte move)
-        {
-            Hand = new Move(move);
+            Points++;
         }
     }
 }

@@ -185,9 +185,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\arojo\\Desktop\\GITS\\rps-class\\Logic\\RPS.csproj",
-      "projectName": "RPS",
-      "projectPath": "C:\\Users\\arojo\\Desktop\\GITS\\rps-class\\Logic\\RPS.csproj",
+      "projectUniqueName": "C:\\Users\\arojo\\Desktop\\GITS\\rps-class\\Logic\\RPS.Back.csproj",
+      "projectName": "RPS.Back",
+      "projectPath": "C:\\Users\\arojo\\Desktop\\GITS\\rps-class\\Logic\\RPS.Back.csproj",
       "packagesPath": "C:\\Users\\arojo\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\arojo\\Desktop\\GITS\\rps-class\\Logic\\obj\\",
       "projectStyle": "PackageReference",

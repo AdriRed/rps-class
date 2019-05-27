@@ -1,39 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using RPS.Interfaces;
-
-namespace RPS.Objects
+﻿namespace RPS.Objects
 {
-    public class Game : IGame
+    public class Game
     {
-        Player P1, P2;
-        Score Sc;
-        public Round actualRound;
-        
+        private Player P1, P2;
+        private Score Score;
+        private Round ActualRound;
+
+        public string LastRoundInfo
+        {
+            get
+            {
+                return P1.Hand + " - " + P2.Hand + "\nWinner: " + ActualRound.Winner + "\n" + Score.ToString() + "\n";
+            }
+        }
+
         public Game(Player p1, Player p2)
         {
             this.P1 = p1;
             this.P2 = p2;
-            this.Sc = new Score(P1, P2);
+            this.Score = new Score(P1, P2);
         }
 
-        public void NewRound (string moveP1, string moveP2)
+        public void NewRound(string moveP1, string moveP2)
         {
-            P1.SetMove(moveP1);
-            P2.SetMove(moveP2);
-            NewRound(P1, P2);
-        }
+            P1.Hand = moveP1;
+            P2.Hand = moveP2;
 
-        public string GetState()
-        {
-            return Sc.State();
-        }
-
-        public void NewRound(Player p1, Player p2)
-        {
-            actualRound = new Round(P1, P2);
-            actualRound.SetWinner();
+            ActualRound = new Round(P1, P2);
         }
     }
 }
