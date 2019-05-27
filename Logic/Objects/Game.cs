@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace RPS.Objects
+﻿namespace RPS.Objects
 {
     public class Game
     {

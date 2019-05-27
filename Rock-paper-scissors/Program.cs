@@ -5,17 +5,17 @@ namespace RPS.Front
 {
     class Program
     {
-
         private static string Scissors = "Scissors", Paper = "Paper", Rock = "Rock", Lizard = "Lizard", Spock = "Spock";
         static void Main()
         {
             //P1 = PLAYER 1
             //P2 = PLAYER 2
 
-            Console.Write("Nombre judaror 1: ");
-            Player player1 = new Player( Console.ReadLine().Trim() );
-            Console.Write("Nombre judaror 2: ");
-            Player player2 = new Player( Console.ReadLine().Trim() );
+            Console.Write("Nombre jugador 1: ");
+            Player player1 = new Player(Console.ReadLine().Trim());
+
+            Console.Write("Nombre jugador 2: ");
+            Player player2 = new Player(Console.ReadLine().Trim());
 
             Game game = new Game(player1, player2);
 
@@ -50,10 +50,11 @@ namespace RPS.Front
             {
                 Console.Write("Movement of " + player.Name + ": ");
                 input = Console.ReadLine().Trim();
-                correct = Move.Types.IndexOf(input) > 0;
+                int index = Move.Types.IndexOf(input);
+                correct = index > 0;
                 if (!correct) Console.WriteLine(error);
 
-            } while (correct);
+            } while (!correct);
 
             player.Hand = input;
         }

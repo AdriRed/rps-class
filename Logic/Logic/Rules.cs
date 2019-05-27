@@ -5,6 +5,7 @@ namespace RPS.Logic
     public class Rules
     {
 
+
         public static Player SetWinner(Player p1, Player p2)
         {
             Player Winner;
@@ -32,6 +33,5 @@ namespace RPS.Logic
 
             return Winner;
         }
-
     }
 }
