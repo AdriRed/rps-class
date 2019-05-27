@@ -5,14 +5,14 @@ namespace RPS.Objects
     public class Game
     {
         private Player Player1, Player2;
-        private Score Score;
+        private Score _Score;
         private Round ActualRound;
 
         public string LastRoundInfo
         {
             get
             {
-                return Player1.Hand + " - " + Player2.Hand + "\nWinner: " + ActualRound.Winner + "\n" + Score.ToString() + "\n";
+                return Player1.Hand + " - " + Player2.Hand + "\nWinner: " + ActualRound.Winner + "\n" + _Score.ToString() + "\n";
             }
         }
 
@@ -20,7 +20,7 @@ namespace RPS.Objects
         {
             this.Player1 = p1;
             this.Player2 = p2;
-            this.Score = new Score(Player1, Player2);
+            this._Score = new Score(Player1, Player2);
         }
 
         public void NewRound(string moveP1, string moveP2)

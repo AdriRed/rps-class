@@ -14,7 +14,7 @@ namespace RPS.Logic
 
             if (p1Movement != p2Movement)
             {
-                if ((p2Movement + 1) % 3 == p1Movement)
+                if ((p1Movement + 1) % 5 == p2Movement || (p1Movement + 3) % 5 == p2Movement)
                 {
                     p1.AddPoint();
                     Winner = p1;

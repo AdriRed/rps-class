@@ -5,6 +5,8 @@ namespace RPS.Front
 {
     class Program
     {
+
+        private static string Scissors = "Scissors", Paper = "Paper", Rock = "Rock", Lizard = "Lizard", Spock = "Spock";
         static void Main()
         {
             //P1 = PLAYER 1
