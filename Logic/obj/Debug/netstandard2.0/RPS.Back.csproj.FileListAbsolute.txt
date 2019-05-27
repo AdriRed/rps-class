@@ -1,0 +1,9 @@
+C:\Users\arojo\Desktop\GITS\rps-class\Logic\bin\Debug\netstandard2.0\RPS.Back.deps.json
+C:\Users\arojo\Desktop\GITS\rps-class\Logic\bin\Debug\netstandard2.0\RPS.Back.dll
+C:\Users\arojo\Desktop\GITS\rps-class\Logic\bin\Debug\netstandard2.0\RPS.Back.pdb
+C:\Users\arojo\Desktop\GITS\rps-class\Logic\obj\Debug\netstandard2.0\RPS.Back.csprojAssemblyReference.cache
+C:\Users\arojo\Desktop\GITS\rps-class\Logic\obj\Debug\netstandard2.0\RPS.Back.csproj.CoreCompileInputs.cache
+C:\Users\arojo\Desktop\GITS\rps-class\Logic\obj\Debug\netstandard2.0\RPS.Back.AssemblyInfoInputs.cache
+C:\Users\arojo\Desktop\GITS\rps-class\Logic\obj\Debug\netstandard2.0\RPS.Back.AssemblyInfo.cs
+C:\Users\arojo\Desktop\GITS\rps-class\Logic\obj\Debug\netstandard2.0\RPS.Back.dll
+C:\Users\arojo\Desktop\GITS\rps-class\Logic\obj\Debug\netstandard2.0\RPS.Back.pdb

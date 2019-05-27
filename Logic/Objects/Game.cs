@@ -1,4 +1,6 @@
-﻿namespace RPS.Objects
+﻿using System;
+
+namespace RPS.Objects
 {
     public class Game
     {
@@ -26,6 +28,11 @@
             P1.Hand = moveP1;
             P2.Hand = moveP2;
 
+            NewRound();
+        }
+
+        public void NewRound()
+        {
             ActualRound = new Round(P1, P2);
         }
     }
