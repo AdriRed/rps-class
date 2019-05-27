@@ -9,10 +9,11 @@ namespace RPS.Front
         {
             //P1 = PLAYER 1
             //P2 = PLAYER 2
+
             Console.Write("Nombre judaror 1: ");
-            Player player1 = new Player(Console.ReadLine().Trim());
+            Player player1 = new Player( Console.ReadLine().Trim() );
             Console.Write("Nombre judaror 2: ");
-            Player player2 = new Player(Console.ReadLine().Trim());
+            Player player2 = new Player( Console.ReadLine().Trim() );
 
             Game game = new Game(player1, player2);
 

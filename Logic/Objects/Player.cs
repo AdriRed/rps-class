@@ -3,7 +3,7 @@
     public class Player
     {
         private Move _Hand;
-
+        
         public string Name
         {
             set;
@@ -33,6 +33,8 @@
                 return _Hand.ToString();
             }
         }
+
+        
 
         public uint Points
         {
