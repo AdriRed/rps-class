@@ -4,7 +4,7 @@ namespace RPS.Objects
 {
     public class Move
     {
-        private readonly List<string> Types = new List<string> { "Rock", "Paper", "Scissors" };
+        private readonly List<string> Types = new List<string> { "Scissors", "Paper", "Rock", "Lizard", "Spock" };
 
         public byte Type
         {
