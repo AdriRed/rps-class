@@ -1,9 +1,10 @@
-﻿using RPS.Logic;
+﻿using RPS.Back.Interfaces;
 
-namespace RPS.Objects
+namespace RPS.Back.Objects
 {
     public class Round
     {
+        private static string NoWinner = "TIE";
         private Player _Winner;
 
         public string Winner
@@ -12,22 +13,15 @@ namespace RPS.Objects
             {
                 string name;
 
-                if (_Winner != null)
-                {
-                    name = _Winner.Name;
-                }
-                else
-                {
-                    name = "TIE";
-                }
+                name = _Winner != null ? _Winner.Name : NoWinner;
 
                 return name;
             }
         }
 
-        public Round(Player p1, Player p2)
+        public Round(Player p1, Player p2, ILogic Rules)
         {
-            _Winner = Rules.SetWinner(p1, p2);
+            _Winner = Rules.GetWinner(p1, p2);
         }
     }
 }

@@ -1,8 +1,11 @@
-﻿namespace RPS.Objects
+﻿using RPS.Back.Interfaces;
+
+namespace RPS.Back.Objects
 {
     public class Player
     {
         private Move _Hand;
+        private ILogic Rules;
 
         public string Name
         {
@@ -26,7 +29,7 @@
         {
             set
             {
-                _Hand = new Move(value);
+                _Hand = new Move(Rules, value);
             }
             get
             {
@@ -36,18 +39,20 @@
 
         public uint Points
         {
-            set;
+            private set;
             get;
         }
 
-        public Player()
+        public Player(ILogic rules)
         {
+            this.Rules = rules;
             this.Name = "PLAYER";
             Points = 0;
         }
 
-        public Player(string name)
+        public Player(ILogic rules, string name)
         {
+            this.Rules = rules;
             this.Name = name;
             Points = 0;
         }

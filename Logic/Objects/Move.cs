@@ -1,25 +1,25 @@
-﻿using System.Collections.Generic;
+﻿using RPS.Back.Interfaces;
 
-namespace RPS.Objects
+namespace RPS.Back.Objects
 {
     public class Move
     {
-        public static readonly List<string> Types = new List<string> { "Scissors", "Paper", "Rock", "Lizard", "Spock" };
+        ILogic Rules;
 
         public byte Type
         {
-            set;
-            get;
+            set; get;
         }
 
         public override string ToString()
         {
-            return Types[Type];
+            return Rules.Moves[Type];
         }
 
-        public Move(string typeName)
+        public Move(ILogic Rules, string typeName)
         {
-            this.Type = (byte)Types.IndexOf(typeName);
+            this.Rules = Rules;
+            this.Type = (byte)Rules.Moves.IndexOf(typeName);
         }
 
     }
