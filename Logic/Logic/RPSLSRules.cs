@@ -6,6 +6,7 @@ namespace RPS.Back.Logic
 {
     public class RPSLSRules : ILogic
     {
+
         internal static readonly string _GameName = "Rock Paper Scissors Lizard Spock";
         internal static readonly List<string> MoveList = new List<string> { "SCISSORS", "PAPER", "ROCK", "LIZARD", "SPOCK" };
 
@@ -23,11 +24,6 @@ namespace RPS.Back.Logic
             {
                 return _GameName;
             }
-        }
-
-        public RPSLSRules()
-        {
-
         }
 
         /*

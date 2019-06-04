@@ -1,0 +1,32 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+  "settings": {
+    "documentationRules": 
+    {
+      "copyrightText": "Code designed by {name}",
+      "companyName": "The Best Company in the world",
+      "variables": {
+        "name": "AdriRed"
+      },
+      "fileNamingConvention": "metadata",
+      "documentExposedElements": true,
+      "documentInternalElements": true,
+      "documentPrivateElements": true,
+      "documentPrivateFields": true
+    },
+
+    "orderingRules": 
+    {
+      "usingDirectivesPlacement": "preserve"
+    },
+
+    "readabilityRules": 
+    {
+      "allowBuiltInTypeAliases": true
+    },
+
+    "namingRules": {
+      "allowCommonHungarianPrefixes": false
+    }
+  }
+}

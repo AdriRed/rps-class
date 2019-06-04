@@ -25,11 +25,6 @@ namespace RPS.Back.Logic
             }
         }
 
-        public RPSRules()
-        {
-
-        }
-
         /*
             Rock        > Scissors  -->     0 > 2
             Paper       > Rock      -->     1 > 0

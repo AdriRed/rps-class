@@ -14,32 +14,33 @@ namespace RPS.Front
 
         static void Main()
         {
-            ILogic rules;
+            ILogic rpsrules, rpslsrules;
             Player player1, player2;
             Game game;
 
-            rules = new RPSRules();
-            RulesInfo(rules);
+            rpsrules = new RPSRules();
+            RulesInfo(rpsrules);
 
-            player1 = PlayerCreation(Player1Prompt, rules);
-            player2 = PlayerCreation(Player2Prompt, rules);
-            game = new Game(player1, player2, rules);
+            player1 = CreatePlayer(Player1Prompt, rpsrules);
+            player2 = CreatePlayer(Player2Prompt, rpsrules);
+            game = new Game(player1, player2, rpsrules);
+
 
             for (int i = 0; i < 5; i++)
             {
-                GameRound(player1, player2, game);
+                NewRound(player1, player2, game);
             }
 
-            rules = new RPSLSRules();
-            RulesInfo(rules);
+            rpslsrules = new RPSLSRules();
+            RulesInfo(rpslsrules);
 
-            player1 = PlayerCreation(Player1Prompt, rules);
-            player2 = PlayerCreation(Player2Prompt, rules);
-            game = new Game(player1, player2, rules);
+            player1 = CreatePlayer(Player1Prompt, rpslsrules);
+            player2 = CreatePlayer(Player2Prompt, rpslsrules);
+            game = new Game(player1, player2, rpslsrules);
 
             for (int i = 0; i < 5; i++)
             {
-                GameRound(player1, player2, game);
+                NewRound(player1, player2, game);
             }
         }
 
@@ -48,7 +49,7 @@ namespace RPS.Front
             Console.WriteLine(String.Format(IntroPrompt, rules.GameName));
         }
 
-        private static Player PlayerCreation(string prompt, ILogic rules)
+        private static Player CreatePlayer(string prompt, ILogic rules)
         {
             Console.Write(prompt);
             Player player = new Player(rules, Console.ReadLine().Trim());
@@ -56,12 +57,12 @@ namespace RPS.Front
             return player;
         }
 
-        private static void GameRound(Player player1, Player player2, Game game)
+        private static void NewRound(Player player1, Player player2, Game game)
         {
             GetMove(player1, game.Rules);
             GetMove(player2, game.Rules);
 
-            game.NewRound(game.Rules);
+            game.NewRound();
             Console.WriteLine(game.LastRoundInfo);
         }
 
