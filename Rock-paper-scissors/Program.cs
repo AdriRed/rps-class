@@ -1,7 +1,8 @@
-﻿using RPS.Back.Interfaces;
+﻿using System;
+using RPS.Back.Interfaces;
 using RPS.Back.Logic;
 using RPS.Back.Objects;
-using System;
+
 
 namespace RPS.Front
 {
@@ -25,11 +26,11 @@ namespace RPS.Front
             player2 = CreatePlayer(Player2Prompt, rpsrules);
             game = new Game(player1, player2, rpsrules);
 
-
-            for (int i = 0; i < 5; i++)
-            {
-                NewRound(player1, player2, game);
-            }
+            NewRound(player1, player2, game);
+            NewRound(player1, player2, game);
+            NewRound(player1, player2, game);
+            NewRound(player1, player2, game);
+            NewRound(player1, player2, game);
 
             rpslsrules = new RPSLSRules();
             RulesInfo(rpslsrules);
@@ -38,10 +39,11 @@ namespace RPS.Front
             player2 = CreatePlayer(Player2Prompt, rpslsrules);
             game = new Game(player1, player2, rpslsrules);
 
-            for (int i = 0; i < 5; i++)
-            {
-                NewRound(player1, player2, game);
-            }
+            NewRound(player1, player2, game);
+            NewRound(player1, player2, game);
+            NewRound(player1, player2, game);
+            NewRound(player1, player2, game);
+            NewRound(player1, player2, game);
         }
 
         private static void RulesInfo(ILogic rules)

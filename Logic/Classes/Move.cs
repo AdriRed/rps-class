@@ -2,25 +2,43 @@
 
 namespace RPS.Back.Objects
 {
+    /// <summary>
+    /// Represents a Move of a specific <see cref="ILogic">Rules</see>.
+    /// </summary>
     public class Move
     {
-        ILogic Rules;
+        private ILogic _Rules;
+        private byte _Type;
 
+        /// <summary>
+        /// Contains the value of the <see cref="Move"/>.
+        /// </summary>
         public byte Type
         {
-            set; get;
+            get { return _Type; }
+            set { _Type = value; }
         }
 
+        /// <summary>
+        /// Converts the Type of the <see cref="Move"/> to a name specified in <see cref="ILogic"/>.
+        /// </summary>
+        /// <returns>
+        /// Returns the name of the move.
+        /// </returns>
         public override string ToString()
         {
-            return Rules.Moves[Type];
+            return _Rules.Moves[Type];
         }
 
+        /// <summary>
+        /// Sets the Type of <see cref="Move"/> by name.
+        /// </summary>
+        /// <param name="Rules">The Move follow specific rules.</param>
+        /// <param name="typeName">The name of the Move</param>
         public Move(ILogic Rules, string typeName)
         {
-            this.Rules = Rules;
+            this._Rules = Rules;
             this.Type = (byte)Rules.Moves.IndexOf(typeName);
         }
-
     }
 }

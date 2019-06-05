@@ -12,26 +12,11 @@ namespace RPS.Back.Objects
     /// </summary>
     public class Game
     {
-        /// <summary>
-        /// Has the format necessary to get the info of the round.
-        /// </summary>
         private static readonly string RoundInfo = "\n{0} - {1} \nWinner: {2}\n{3}\n";
 
-        /// <summary>
-        /// Has all properties of Player 1.
-        /// </summary>
         private Player Player1;
-        /// <summary>
-        /// Has all properties of Player 2.
-        /// </summary>
         private Player Player2;
-        /// <summary>
-        /// Has the score of the game, that access Player 1 and Player 2 personal score.
-        /// </summary>
         private Score _Score;
-        /// <summary>
-        /// Has all properties of the actual round.
-        /// </summary>
         private Round ActualRound;
 
         /// <summary>

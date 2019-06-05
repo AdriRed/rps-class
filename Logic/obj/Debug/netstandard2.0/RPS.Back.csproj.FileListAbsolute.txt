@@ -6,3 +6,4 @@ C:\Users\arojo\Desktop\GITS\rps-class\Logic\obj\Debug\netstandard2.0\RPS.Back.As
 C:\Users\arojo\Desktop\GITS\rps-class\Logic\obj\Debug\netstandard2.0\RPS.Back.AssemblyInfo.cs
 C:\Users\arojo\Desktop\GITS\rps-class\Logic\obj\Debug\netstandard2.0\RPS.Back.dll
 C:\Users\arojo\Desktop\GITS\rps-class\Logic\obj\Debug\netstandard2.0\RPS.Back.pdb
+C:\Users\arojo\Desktop\GITS\rps-class\Logic\obj\Debug\netstandard2.0\RPS.Back.csprojAssemblyReference.cache
