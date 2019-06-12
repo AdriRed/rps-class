@@ -1,8 +1,6 @@
 ﻿using System;
-using RPS.Back.Interfaces;
-using RPS.Back.Logic;
-using RPS.Back.Objects;
-
+using RPS.Back.Classes;
+using RPS.Back.Classes.Logics;
 
 namespace RPS.Front
 {
@@ -15,43 +13,41 @@ namespace RPS.Front
 
         static void Main()
         {
-            ILogic rpsrules, rpslsrules;
+            Logic rules;
             Player player1, player2;
             Game game;
+            
+            rules = new RPSRules();
+            RulesInfo(rules);
+            player1 = CreatePlayer(Player1Prompt, rules);
+            player2 = CreatePlayer(Player2Prompt, rules);
+            game = new Game(player1, player2, rules);
 
-            rpsrules = new RPSRules();
-            RulesInfo(rpsrules);
+            for (int i = 0; i < 10; i++)
+            {
+                NewRound(player1, player2, game);
+            }
+            
 
-            player1 = CreatePlayer(Player1Prompt, rpsrules);
-            player2 = CreatePlayer(Player2Prompt, rpsrules);
-            game = new Game(player1, player2, rpsrules);
+            rules = new RPSLSRules();
+            RulesInfo(rules);
 
-            NewRound(player1, player2, game);
-            NewRound(player1, player2, game);
-            NewRound(player1, player2, game);
-            NewRound(player1, player2, game);
-            NewRound(player1, player2, game);
+            player1 = CreatePlayer(Player1Prompt, rules);
+            player2 = CreatePlayer(Player2Prompt, rules);
+            game = new Game(player1, player2, rules);
 
-            rpslsrules = new RPSLSRules();
-            RulesInfo(rpslsrules);
-
-            player1 = CreatePlayer(Player1Prompt, rpslsrules);
-            player2 = CreatePlayer(Player2Prompt, rpslsrules);
-            game = new Game(player1, player2, rpslsrules);
-
-            NewRound(player1, player2, game);
-            NewRound(player1, player2, game);
-            NewRound(player1, player2, game);
-            NewRound(player1, player2, game);
-            NewRound(player1, player2, game);
+            for (int i = 0; i < 10; i++)
+            {
+                NewRound(player1, player2, game);
+            }
         }
 
-        private static void RulesInfo(ILogic rules)
+        private static void RulesInfo(Logic rules)
         {
-            Console.WriteLine(String.Format(IntroPrompt, rules.GameName));
+            Console.WriteLine(String.Format(IntroPrompt, rules.Info));
         }
 
-        private static Player CreatePlayer(string prompt, ILogic rules)
+        private static Player CreatePlayer(string prompt, Logic rules)
         {
             Console.Write(prompt);
             Player player = new Player(rules, Console.ReadLine().Trim());
@@ -68,7 +64,7 @@ namespace RPS.Front
             Console.WriteLine(game.LastRoundInfo);
         }
 
-        private static void GetMove(Player player, ILogic rules)
+        private static void GetMove(Player player, Logic rules)
         {
             bool correct;
             string input;
@@ -77,7 +73,7 @@ namespace RPS.Front
             {
                 Console.Write(String.Format(AskMovePrompt, player.Name));
                 input = Console.ReadLine().Trim().ToUpper();
-                int index = rules.Moves.IndexOf(input);
+                int index = Array.IndexOf(rules.Moves, input);
                 correct = index >= 0;
                 if (!correct) Console.WriteLine(ErrorPrompt);
 

@@ -1,15 +1,14 @@
-﻿using RPS.Back.Interfaces;
-using RPS.Back.Objects;
+﻿using RPS.Back.Classes;
 using System.Collections.Generic;
 
-namespace RPS.Back.Logic
+namespace RPS.Back.Classes.Logics
 {
-    public class RPSRules : ILogic
+    public class RPSRules : Logic
     {
-        internal static readonly string _GameName = "Rock Paper Scissors";
-        internal static readonly List<string> MoveList = new List<string> { "ROCK", "PAPER", "SCISSORS" };
+        private static readonly string _GameName = "Rock Paper Scissors";
+        private static readonly string[] MoveList = { "ROCK", "PAPER", "SCISSORS" };
 
-        public List<string> Moves
+        public override string[] Moves
         {
             get
             {
@@ -17,7 +16,8 @@ namespace RPS.Back.Logic
             }
         }
 
-        public string GameName
+
+        public override string Info
         {
             get
             {
@@ -50,13 +50,13 @@ namespace RPS.Back.Logic
             end if
         */
 
-        public Player GetWinner(Player player1, Player player2)
+        public override Player GetWinner(Player player1, Player player2)
         {
             Player winner;
 
             if (player1.HandType != player2.HandType)
             {
-                if ((player2.HandType + 1) % 3 == player1.HandType)
+                if (GetCondition(player1, player2))
                 {
                     player1.AddPoint();
                     winner = player1;
@@ -72,6 +72,15 @@ namespace RPS.Back.Logic
                 winner = null;
             }
             return winner;
+        }
+
+        protected override bool GetCondition(Player player1, Player player2)
+        {
+            bool condition;
+
+            condition = (player2.HandType + 1) % 3 == player1.HandType;
+
+            return condition;
         }
     }
 }

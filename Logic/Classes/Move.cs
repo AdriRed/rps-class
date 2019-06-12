@@ -1,13 +1,16 @@
-﻿using RPS.Back.Interfaces;
+﻿// <copyright file="Move.cs" company="The Best Company in the world">
+// Code designed by AdriRed
+// </copyright>
+using System;
 
-namespace RPS.Back.Objects
+namespace RPS.Back.Classes
 {
     /// <summary>
-    /// Represents a Move of a specific <see cref="ILogic">Rules</see>.
+    /// Represents a Move of a specific <see cref="Logic">Rules</see>.
     /// </summary>
     public class Move
     {
-        private ILogic _Rules;
+        private Logic _Rules;
         private byte _Type;
 
         /// <summary>
@@ -20,7 +23,7 @@ namespace RPS.Back.Objects
         }
 
         /// <summary>
-        /// Converts the Type of the <see cref="Move"/> to a name specified in <see cref="ILogic"/>.
+        /// Converts the Type of the <see cref="Move"/> to a name specified in <see cref="Logic"/>.
         /// </summary>
         /// <returns>
         /// Returns the name of the move.
@@ -31,14 +34,14 @@ namespace RPS.Back.Objects
         }
 
         /// <summary>
-        /// Sets the Type of <see cref="Move"/> by name.
+        /// Initializes the type of <see cref="Move"/> by name.
         /// </summary>
         /// <param name="Rules">The Move follow specific rules.</param>
         /// <param name="typeName">The name of the Move</param>
-        public Move(ILogic Rules, string typeName)
+        public Move(Logic Rules, string typeName)
         {
             this._Rules = Rules;
-            this.Type = (byte)Rules.Moves.IndexOf(typeName);
+            this.Type = (byte) Array.IndexOf(Rules.Moves, typeName);
         }
     }
 }
